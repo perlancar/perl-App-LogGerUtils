@@ -1,0 +1,22 @@
+#!perl
+
+# DATE
+# VERSION
+
+use strict;
+use warnings;
+
+use Log::ger;
+use Log::ger::Output 'Screen';
+use Log::ger::Util;
+
+Log::ger::Util::set_level("trace");
+log_trace("trace trace trace trace trace trace");
+log_debug("debug debug debug debug debug debug");
+log_info ("info info info info info info info info");
+log_warn ("warn warn warn warn warn warn warn warn");
+log_error("error error error error error error");
+log_fatal("fatal fatal fatal fatal fatal fatal");
+
+# ABSTRACT: Demo Log::ger::Output::Screen colors
+# PODNAME:
