@@ -6,6 +6,7 @@
 use strict 'subs', 'vars';
 use warnings;
 
+use Log::ger::Level::Like::LogAny;
 use Log::ger;
 use Log::ger::Output 'Screen';
 use Log::ger::Util;
@@ -16,5 +17,5 @@ for (sort { $ll->{$a} <=> $ll->{$b} } keys %$ll) {
     &{"log_$_"}("$_ " x 7);
 }
 
-# ABSTRACT: Demo Log::ger::Output::Screen colors
+# ABSTRACT: Demo Log::ger::Output::Screen colors (using levels from Lg:Level::Like::LogAny)
 # PODNAME:
